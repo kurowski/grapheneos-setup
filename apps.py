@@ -1,0 +1,160 @@
+"""Source of truth for phone provisioning.
+
+Every entry declares:
+  id      — package name (used by ADB / Aurora / Obtainium)
+  name    — display name
+  source  — one of: github | fdroid | html | aurora | aurora_sgp
+  url     — for obtainium-fed sources; ignored for aurora*
+  notes   — freeform; ends up in generated checklists
+
+URL heuristics (verify inside Obtainium after import):
+  github → https://github.com/<owner>/<repo>
+  fdroid → https://f-droid.org/packages/<package>/
+  html   → vendor download page
+"""
+
+BOOTSTRAP = [
+    # Installed via `adb install` before Obtainium can take over
+    {"id": "app.obtainium",
+     "name": "Obtainium",
+     "source": "github",
+     "url": "https://github.com/ImranR98/Obtainium",
+     "apk_asset_filter": "-foss",  # prefer the foss build
+     "notes": "bootstrap — download APK to bootstrap/"},
+]
+
+OBTAINIUM = [
+    # Obtainium installs these after import of obtainium-import.json.
+    # Includes F-Droid + Aurora so they get managed + auto-updated by Obtainium.
+
+    {"id": "org.fdroid.fdroid", "name": "F-Droid",
+     "source": "html", "url": "https://f-droid.org/F-Droid.apk",
+     "notes": "package manager for FOSS"},
+    {"id": "com.aurora.store", "name": "Aurora Store",
+     "source": "fdroid", "url": "https://f-droid.org/packages/com.aurora.store/",
+     "notes": "anonymous Play proxy; used for the tap-through apps below"},
+
+    # FOSS
+    {"id": "at.bitfire.davdroid", "name": "DAVx5",
+     "source": "fdroid", "url": "https://f-droid.org/packages/at.bitfire.davdroid/"},
+    {"id": "com.capyreader.app", "name": "Capy Reader",
+     "source": "github", "url": "https://github.com/jocmp/capyreader"},
+    {"id": "com.flipperdevices.app", "name": "Flipper Zero",
+     "source": "github", "url": "https://github.com/flipperdevices/Flipper-Android-App"},
+    {"id": "com.liamcottle.meshcore.android", "name": "MeshCore",
+     "source": "github", "url": "https://github.com/liamcottle/meshcore-android",
+     "notes": "verify repo URL inside Obtainium"},
+    {"id": "com.seafile.seadroid2", "name": "Seafile",
+     "source": "github", "url": "https://github.com/haiwen/seafile-android"},
+    {"id": "com.tailscale.ipn", "name": "Tailscale",
+     "source": "github", "url": "https://github.com/tailscale/tailscale-android"},
+    {"id": "com.termux", "name": "Termux",
+     "source": "github", "url": "https://github.com/termux/termux-app"},
+    {"id": "com.termux.styling", "name": "Termux Styling",
+     "source": "github", "url": "https://github.com/termux/termux-styling"},
+    {"id": "de.danoeh.antennapod", "name": "AntennaPod",
+     "source": "github", "url": "https://github.com/AntennaPod/AntennaPod"},
+    {"id": "de.schliweb.makeacopy", "name": "MakeACopy",
+     "source": "github", "url": "https://github.com/schliweb/makeacopy",
+     "notes": "verify repo"},
+    {"id": "io.ente.photos", "name": "Ente Photos",
+     "source": "github", "url": "https://github.com/ente-io/ente",
+     "apk_asset_filter": "photos"},
+    {"id": "io.homeassistant.companion.android", "name": "Home Assistant",
+     "source": "github", "url": "https://github.com/home-assistant/android",
+     "apk_asset_filter": "full"},
+    {"id": "net.waterfox.android.release", "name": "Waterfox",
+     "source": "github", "url": "https://github.com/BrowserWorks/Waterfox-Android"},
+    {"id": "org.breezyweather", "name": "Breezy Weather",
+     "source": "github", "url": "https://github.com/breezy-weather/breezy-weather"},
+    {"id": "org.joinmastodon.android", "name": "Mastodon",
+     "source": "github", "url": "https://github.com/mastodon/mastodon-android"},
+    {"id": "org.kde.kdeconnect_tp", "name": "KDE Connect",
+     "source": "fdroid", "url": "https://f-droid.org/packages/org.kde.kdeconnect_tp/"},
+    {"id": "org.tasks", "name": "Tasks.org",
+     "source": "github", "url": "https://github.com/tasks/tasks"},
+    {"id": "xyz.blueskyweb.app", "name": "Bluesky",
+     "source": "github", "url": "https://github.com/bluesky-social/social-app"},
+
+    # Direct-vendor (sensitive / security-critical: pull from the source of truth)
+    {"id": "org.thoughtcrime.securesms", "name": "Signal",
+     "source": "html", "url": "https://signal.org/android/apk/",
+     "notes": "Signal direct APK page"},
+    {"id": "com.whatsapp", "name": "WhatsApp",
+     "source": "html", "url": "https://www.whatsapp.com/android/"},
+    {"id": "md.obsidian", "name": "Obsidian",
+     "source": "github", "url": "https://github.com/obsidianmd/obsidian-releases"},
+    {"id": "com.anthropic.claude", "name": "Claude",
+     "source": "html", "url": "https://claude.ai/download",
+     "notes": "URL may be wrong; if no APK is offered, install from Aurora"},
+    {"id": "com.stremio.one", "name": "Stremio",
+     "source": "html", "url": "https://www.stremio.com/downloads"},
+]
+
+AURORA = [
+    # Tap-through list in Aurora Store. `sgp=True` means the app also needs
+    # Sandboxed Google Play installed (from GOS Apps) for push / Play Integrity.
+
+    # Google (SGP mandatory)
+    ("com.google.android.apps.googlevoice", "Google Voice", True),
+    ("com.google.android.apps.wear.companion", "Wear OS", True),
+
+    # Banking / financial
+    ("com.infonow.bofa", "Bank of America", True),
+    ("com.wf.wellsfargomobile", "Wells Fargo", True),
+    ("com.venmo", "Venmo", True),
+    ("me.greenlight", "Greenlight", True),
+
+    # Health
+    ("com.cerner.iris.play", "Cerner HealtheLife", False),
+
+    # Travel / rides / food
+    ("com.airbnb.android", "Airbnb", False),
+    ("com.ubercab", "Uber", True),
+    ("me.lyft.android", "Lyft", True),
+    ("com.dd.doordash", "DoorDash", False),
+    ("com.instacart.client", "Instacart", False),
+    ("com.main.gopuff", "GoPuff", False),
+    ("com.opentable", "OpenTable", False),
+    ("com.resy.android.prod", "Resy", False),
+    ("com.touchtunes.android", "TouchTunes", False),
+
+    # Streaming / media
+    ("com.spotify.music", "Spotify", False),
+    ("com.getchannels.dvr.app", "Channels DVR", False),
+    ("com.sonos.acr2", "Sonos", False),
+
+    # Home / IoT
+    ("com.mcu.reolink", "Reolink", False),
+    ("com.tuya.smart", "Tuya Smart", False),
+    ("com.birdbuddy.app", "Bird Buddy", False),
+
+    # Work / productivity
+    ("com.atlassian.android.jira.core", "Jira", False),
+    ("com.azure.authenticator", "Microsoft Authenticator", True),
+    ("com.duosecurity.duomobile", "Duo Mobile", True),
+    ("com.microsoft.office.outlook", "Outlook", True),
+    ("com.microsoft.skydrive", "OneDrive", True),
+    ("com.microsoft.teams", "Teams", True),
+    ("us.zoom.videomeetings", "Zoom", False),
+    ("com.fastmail.app", "Fastmail", False),
+    ("com.onepassword.android", "1Password", True),
+    ("com.dayoneapp.dayone", "Day One", False),
+    ("com.readermobile", "Readwise Reader", False),
+
+    # Retail / misc
+    ("com.amazon.mShop.android.shopping", "Amazon", False),
+    ("com.usablenet.mobile.walgreen", "Walgreens", False),
+    ("com.planetfitness", "Planet Fitness", False),
+    ("com.strava", "Strava", False),
+    ("com.ipsgroupinc.parksmarter", "ParkSmarter", False),
+    ("net.sharewire.parkmobilev2", "ParkMobile", False),
+    ("org.bookshop.app", "Bookshop.org", False),
+    ("com.kagi.search", "Kagi Search", False),
+    ("com.powerschool.portal", "PowerSchool", False),
+    ("com.valvesoftware.android.steam.community", "Steam", False),
+    ("com.server.auditor.ssh.client", "Termius", False),
+    ("com.subaru.telematics.app.remote", "Subaru STARLINK", True),
+    ("com.toyota.oneapp", "Toyota", True),
+    ("com.pushd.client", "Aura Frames", False),
+]

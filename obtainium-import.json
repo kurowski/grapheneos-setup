@@ -1,0 +1,290 @@
+{
+  "apps": [
+    {
+      "id": "app.obtainium",
+      "url": "https://github.com/ImranR98/Obtainium",
+      "name": "Obtainium",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"-foss\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "org.fdroid.fdroid",
+      "url": "https://f-droid.org/F-Droid.apk",
+      "name": "F-Droid",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "HTML"
+    },
+    {
+      "id": "com.aurora.store",
+      "url": "https://f-droid.org/packages/com.aurora.store/",
+      "name": "Aurora Store",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "F-Droid"
+    },
+    {
+      "id": "at.bitfire.davdroid",
+      "url": "https://f-droid.org/packages/at.bitfire.davdroid/",
+      "name": "DAVx5",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "F-Droid"
+    },
+    {
+      "id": "com.capyreader.app",
+      "url": "https://github.com/jocmp/capyreader",
+      "name": "Capy Reader",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.flipperdevices.app",
+      "url": "https://github.com/flipperdevices/Flipper-Android-App",
+      "name": "Flipper Zero",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.liamcottle.meshcore.android",
+      "url": "https://github.com/liamcottle/meshcore-android",
+      "name": "MeshCore",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.seafile.seadroid2",
+      "url": "https://github.com/haiwen/seafile-android",
+      "name": "Seafile",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.tailscale.ipn",
+      "url": "https://github.com/tailscale/tailscale-android",
+      "name": "Tailscale",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.termux",
+      "url": "https://github.com/termux/termux-app",
+      "name": "Termux",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.termux.styling",
+      "url": "https://github.com/termux/termux-styling",
+      "name": "Termux Styling",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "de.danoeh.antennapod",
+      "url": "https://github.com/AntennaPod/AntennaPod",
+      "name": "AntennaPod",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "de.schliweb.makeacopy",
+      "url": "https://github.com/schliweb/makeacopy",
+      "name": "MakeACopy",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "io.ente.photos",
+      "url": "https://github.com/ente-io/ente",
+      "name": "Ente Photos",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"photos\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "io.homeassistant.companion.android",
+      "url": "https://github.com/home-assistant/android",
+      "name": "Home Assistant",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"full\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "net.waterfox.android.release",
+      "url": "https://github.com/BrowserWorks/Waterfox-Android",
+      "name": "Waterfox",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "org.breezyweather",
+      "url": "https://github.com/breezy-weather/breezy-weather",
+      "name": "Breezy Weather",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "org.joinmastodon.android",
+      "url": "https://github.com/mastodon/mastodon-android",
+      "name": "Mastodon",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "org.kde.kdeconnect_tp",
+      "url": "https://f-droid.org/packages/org.kde.kdeconnect_tp/",
+      "name": "KDE Connect",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "F-Droid"
+    },
+    {
+      "id": "org.tasks",
+      "url": "https://github.com/tasks/tasks",
+      "name": "Tasks.org",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "xyz.blueskyweb.app",
+      "url": "https://github.com/bluesky-social/social-app",
+      "name": "Bluesky",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "org.thoughtcrime.securesms",
+      "url": "https://signal.org/android/apk/",
+      "name": "Signal",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "HTML"
+    },
+    {
+      "id": "com.whatsapp",
+      "url": "https://www.whatsapp.com/android/",
+      "name": "WhatsApp",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "HTML"
+    },
+    {
+      "id": "md.obsidian",
+      "url": "https://github.com/obsidianmd/obsidian-releases",
+      "name": "Obsidian",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
+      "id": "com.anthropic.claude",
+      "url": "https://claude.ai/download",
+      "name": "Claude",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "HTML"
+    },
+    {
+      "id": "com.stremio.one",
+      "url": "https://www.stremio.com/downloads",
+      "name": "Stremio",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "HTML"
+    }
+  ]
+}
