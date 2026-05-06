@@ -30,6 +30,8 @@ Sandboxed Google Play for push/Play-Integrity.
 - [ ] `com.tuya.smart` — Tuya Smart
 - [ ] `com.birdbuddy.app` — Bird Buddy
 - [ ] `com.atlassian.android.jira.core` — Jira
+- [ ] `com.backblaze.android` — Backblaze
+- [ ] `com.github.android` — GitHub
 - [ ] `com.azure.authenticator` — Microsoft Authenticator **[SGP]**
 - [ ] `com.duosecurity.duomobile` — Duo Mobile **[SGP]**
 - [ ] `com.microsoft.office.outlook` — Outlook **[SGP]**

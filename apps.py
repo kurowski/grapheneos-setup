@@ -40,6 +40,8 @@ OBTAINIUM = [
     # FOSS
     {"id": "at.bitfire.davdroid", "name": "DAVx5",
      "source": "fdroid", "url": "https://f-droid.org/packages/at.bitfire.davdroid/"},
+    {"id": "ch.protonvpn.android", "name": "Proton VPN",
+     "source": "github", "url": "https://github.com/ProtonVPN/android-app"},
     {"id": "com.capyreader.app", "name": "Capy Reader",
      "source": "github", "url": "https://github.com/jocmp/capyreader"},
     {"id": "com.flipperdevices.app", "name": "Flipper Zero",
@@ -131,6 +133,8 @@ AURORA = [
 
     # Work / productivity
     ("com.atlassian.android.jira.core", "Jira", False),
+    ("com.backblaze.android", "Backblaze", False),
+    ("com.github.android", "GitHub", False),
     ("com.azure.authenticator", "Microsoft Authenticator", True),
     ("com.duosecurity.duomobile", "Duo Mobile", True),
     ("com.microsoft.office.outlook", "Outlook", True),

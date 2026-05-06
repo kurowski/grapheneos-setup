@@ -45,6 +45,17 @@
       "overrideSource": "F-Droid"
     },
     {
+      "id": "ch.protonvpn.android",
+      "url": "https://github.com/ProtonVPN/android-app",
+      "name": "Proton VPN",
+      "author": "",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "categories": [],
+      "allowIdChange": true,
+      "overrideSource": "GitHub"
+    },
+    {
       "id": "com.capyreader.app",
       "url": "https://github.com/jocmp/capyreader",
       "name": "Capy Reader",
