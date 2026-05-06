@@ -79,8 +79,8 @@ OBTAINIUM = [
 
     # Direct-vendor (sensitive / security-critical: pull from the source of truth)
     {"id": "org.thoughtcrime.securesms", "name": "Signal",
-     "source": "html", "url": "https://signal.org/android/apk/",
-     "notes": "Signal direct APK page"},
+     "source": "github", "url": "https://github.com/signalapp/Signal-Android",
+     "notes": "Signal now ships APKs to GitHub releases"},
     {"id": "com.whatsapp", "name": "WhatsApp",
      "source": "html", "url": "https://www.whatsapp.com/android/"},
     {"id": "md.obsidian", "name": "Obsidian",

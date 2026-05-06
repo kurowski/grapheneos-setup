@@ -233,14 +233,14 @@
     },
     {
       "id": "org.thoughtcrime.securesms",
-      "url": "https://signal.org/android/apk/",
+      "url": "https://github.com/signalapp/Signal-Android",
       "name": "Signal",
       "author": "",
       "preferredApkIndex": 0,
       "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
       "categories": [],
       "allowIdChange": true,
-      "overrideSource": "HTML"
+      "overrideSource": "GitHub"
     },
     {
       "id": "com.whatsapp",
