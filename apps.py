@@ -19,8 +19,11 @@ BOOTSTRAP = [
      "name": "Obtainium",
      "source": "github",
      "url": "https://github.com/ImranR98/Obtainium",
-     "apk_asset_filter": "-foss",  # prefer the foss build
-     "notes": "bootstrap — download APK to bootstrap/"},
+     # Pick the standard release, not the *-fdroid-*.apk variant (different
+     # applicationId for F-Droid's channel; would refuse to update over our
+     # adb-installed copy).
+     "apk_asset_filter": "^(?!.*fdroid).*\\.apk$",
+     "notes": "bootstrap — adb install app-release.apk manually first time"},
 ]
 
 OBTAINIUM = [

@@ -6,7 +6,7 @@
       "name": "Obtainium",
       "author": "",
       "preferredApkIndex": 0,
-      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"-foss\", \"invertAPKFilter\": false}",
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"^(?!.*fdroid).*\\\\.apk$\", \"invertAPKFilter\": false}",
       "categories": [],
       "allowIdChange": true,
       "overrideSource": "GitHub"

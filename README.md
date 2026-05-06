@@ -17,8 +17,10 @@ Curated install list for a fresh GrapheneOS phone.
 3. **Install Obtainium** (only true bootstrap):
    ```sh
    # Get the latest APK from https://github.com/ImranR98/Obtainium/releases
-   # Grab the *-foss.apk asset
-   adb install ~/Downloads/Obtainium-*-foss.apk
+   # Grab `app-release.apk` (universal) — the `*-fdroid-*.apk` files are
+   # the same code under a different applicationId for F-Droid's update
+   # channel; either works, but the standard build is the simplest path.
+   adb install ~/Downloads/app-release.apk
    ```
 4. **Push the import file** and open Obtainium:
    ```sh
