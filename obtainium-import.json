@@ -241,17 +241,6 @@
       "categories": [],
       "allowIdChange": true,
       "overrideSource": "GitHub"
-    },
-    {
-      "id": "com.stremio.one",
-      "url": "https://www.stremio.com/downloads",
-      "name": "Stremio",
-      "author": "",
-      "preferredApkIndex": 0,
-      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
-      "categories": [],
-      "allowIdChange": true,
-      "overrideSource": "HTML"
     }
   ]
 }

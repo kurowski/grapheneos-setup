@@ -82,8 +82,6 @@ OBTAINIUM = [
      "notes": "Signal now ships APKs to GitHub releases"},
     {"id": "md.obsidian", "name": "Obsidian",
      "source": "github", "url": "https://github.com/obsidianmd/obsidian-releases"},
-    {"id": "com.stremio.one", "name": "Stremio",
-     "source": "html", "url": "https://www.stremio.com/downloads"},
 ]
 
 AURORA = [
