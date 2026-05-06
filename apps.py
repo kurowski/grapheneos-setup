@@ -31,7 +31,7 @@ OBTAINIUM = [
     # Includes F-Droid + Aurora so they get managed + auto-updated by Obtainium.
 
     {"id": "org.fdroid.fdroid", "name": "F-Droid",
-     "source": "html", "url": "https://f-droid.org/F-Droid.apk",
+     "source": "fdroid", "url": "https://f-droid.org/packages/org.fdroid.fdroid/",
      "notes": "package manager for FOSS"},
     {"id": "com.aurora.store", "name": "Aurora Store",
      "source": "fdroid", "url": "https://f-droid.org/packages/com.aurora.store/",
@@ -44,11 +44,8 @@ OBTAINIUM = [
      "source": "github", "url": "https://github.com/jocmp/capyreader"},
     {"id": "com.flipperdevices.app", "name": "Flipper Zero",
      "source": "github", "url": "https://github.com/flipperdevices/Flipper-Android-App"},
-    {"id": "com.liamcottle.meshcore.android", "name": "MeshCore",
-     "source": "github", "url": "https://github.com/liamcottle/meshcore-android",
-     "notes": "verify repo URL inside Obtainium"},
     {"id": "com.seafile.seadroid2", "name": "Seafile",
-     "source": "github", "url": "https://github.com/haiwen/seafile-android"},
+     "source": "fdroid", "url": "https://f-droid.org/packages/com.seafile.seadroid2/"},
     {"id": "com.tailscale.ipn", "name": "Tailscale",
      "source": "github", "url": "https://github.com/tailscale/tailscale-android"},
     {"id": "com.termux", "name": "Termux",
@@ -56,10 +53,9 @@ OBTAINIUM = [
     {"id": "com.termux.styling", "name": "Termux Styling",
      "source": "github", "url": "https://github.com/termux/termux-styling"},
     {"id": "de.danoeh.antennapod", "name": "AntennaPod",
-     "source": "github", "url": "https://github.com/AntennaPod/AntennaPod"},
+     "source": "fdroid", "url": "https://f-droid.org/packages/de.danoeh.antennapod/"},
     {"id": "de.schliweb.makeacopy", "name": "MakeACopy",
-     "source": "github", "url": "https://github.com/schliweb/makeacopy",
-     "notes": "verify repo"},
+     "source": "fdroid", "url": "https://f-droid.org/packages/de.schliweb.makeacopy/"},
     {"id": "io.ente.photos", "name": "Ente Photos",
      "source": "github", "url": "https://github.com/ente-io/ente",
      "apk_asset_filter": "photos"},
@@ -87,9 +83,6 @@ OBTAINIUM = [
      "source": "html", "url": "https://www.whatsapp.com/android/"},
     {"id": "md.obsidian", "name": "Obsidian",
      "source": "github", "url": "https://github.com/obsidianmd/obsidian-releases"},
-    {"id": "com.anthropic.claude", "name": "Claude",
-     "source": "html", "url": "https://claude.ai/download",
-     "notes": "URL may be wrong; if no APK is offered, install from Aurora"},
     {"id": "com.stremio.one", "name": "Stremio",
      "source": "html", "url": "https://www.stremio.com/downloads"},
 ]
@@ -101,6 +94,10 @@ AURORA = [
     # Google (SGP mandatory)
     ("com.google.android.apps.googlevoice", "Google Voice", True),
     ("com.google.android.apps.wear.companion", "Wear OS", True),
+
+    # Play-only (no FOSS / direct-vendor distribution)
+    ("com.anthropic.claude", "Claude", False),
+    ("com.liamcottle.meshcore.android", "MeshCore", False),
 
     # Banking / financial
     ("com.infonow.bofa", "Bank of America", True),

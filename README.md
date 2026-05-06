@@ -26,8 +26,14 @@ Curated install list for a fresh GrapheneOS phone.
    ```sh
    adb push obtainium-import.json /sdcard/Download/
    ```
-   In Obtainium: Settings → Import/Export → Obtainium Import → pick the file.
-   Tap the "Install All" button.
+   In Obtainium: Settings → Import/Export → Obtainium Import → pick the
+   file. The apps now show in the list flagged as "Update available" (since
+   they're not yet installed). To install them in bulk: long-press any app
+   to enter selection mode → use the "Select All" action in the top bar →
+   tap the install/update action in the bottom bar. Approve the install
+   prompt for each (Android requires per-install consent on the first run;
+   after that you can grant Obtainium "install unknown apps" permission to
+   make subsequent installs silent).
 5. **Install Sandboxed Google Play** (only if you want any SGP-flagged apps
    in the checklist to work properly):
    - Open the GOS **Apps** app (pre-installed)
@@ -50,12 +56,21 @@ adb shell pm list packages -3 | sort | sed 's/^package://' > packages-current.tx
 # Diff against apps.py to see what drifted
 ```
 
-## Known issues / verify-in-Obtainium
+## When something fails in Obtainium
 
-A few URLs in `apps.py` are best-guess; if Obtainium fails to resolve them,
-fix the URL in the Obtainium UI (it'll offer to auto-detect):
+The error "could not find a suitable release" means Obtainium found the
+source but couldn't match a downloadable APK. Common causes:
 
-- `com.liamcottle.meshcore.android`
-- `de.schliweb.makeacopy`
-- `com.seafile.seadroid2`
-- `com.anthropic.claude` (may not publish an APK — fall back to Aurora)
+- The project doesn't publish APK assets to GitHub Releases (they only
+  ship via F-Droid or Play). Fix: change source to F-Droid in `apps.py`.
+- The project is Play-only (no FOSS or direct-vendor distribution). Fix:
+  move it to the `AURORA` list.
+- The vendor's HTML page renders APK links via JavaScript and Obtainium
+  can't see them (e.g. Signal). Fix: use the "Direct APK Link" source
+  with a stable URL, or the `HTML` source with a custom regex.
+
+To check whether a GitHub project actually ships APKs:
+
+```sh
+gh release view --repo OWNER/NAME --json assets --jq '.assets[].name'
+```
