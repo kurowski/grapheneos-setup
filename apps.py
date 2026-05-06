@@ -46,8 +46,6 @@ OBTAINIUM = [
      "source": "github", "url": "https://github.com/jocmp/capyreader"},
     {"id": "com.flipperdevices.app", "name": "Flipper Zero",
      "source": "github", "url": "https://github.com/flipperdevices/Flipper-Android-App"},
-    {"id": "com.seafile.seadroid2", "name": "Seafile",
-     "source": "fdroid", "url": "https://f-droid.org/packages/com.seafile.seadroid2/"},
     {"id": "com.tailscale.ipn", "name": "Tailscale",
      "source": "github", "url": "https://github.com/tailscale/tailscale-android"},
     {"id": "com.termux", "name": "Termux",
@@ -73,7 +71,8 @@ OBTAINIUM = [
     {"id": "org.kde.kdeconnect_tp", "name": "KDE Connect",
      "source": "fdroid", "url": "https://f-droid.org/packages/org.kde.kdeconnect_tp/"},
     {"id": "org.tasks", "name": "Tasks.org",
-     "source": "github", "url": "https://github.com/tasks/tasks"},
+     "source": "github", "url": "https://github.com/tasks/tasks",
+     "apk_asset_filter": "-fdroid-"},  # not -googleplay-
     {"id": "xyz.blueskyweb.app", "name": "Bluesky",
      "source": "github", "url": "https://github.com/bluesky-social/social-app"},
 
@@ -81,8 +80,6 @@ OBTAINIUM = [
     {"id": "org.thoughtcrime.securesms", "name": "Signal",
      "source": "github", "url": "https://github.com/signalapp/Signal-Android",
      "notes": "Signal now ships APKs to GitHub releases"},
-    {"id": "com.whatsapp", "name": "WhatsApp",
-     "source": "html", "url": "https://www.whatsapp.com/android/"},
     {"id": "md.obsidian", "name": "Obsidian",
      "source": "github", "url": "https://github.com/obsidianmd/obsidian-releases"},
     {"id": "com.stremio.one", "name": "Stremio",
@@ -100,6 +97,8 @@ AURORA = [
     # Play-only (no FOSS / direct-vendor distribution)
     ("com.anthropic.claude", "Claude", False),
     ("com.liamcottle.meshcore.android", "MeshCore", False),
+    ("com.seafile.seadroid2", "Seafile", False),  # F-Droid build is stale (v4.0.6)
+    ("com.whatsapp", "WhatsApp", False),  # vendor URL has expiring tokens
 
     # Banking / financial
     ("com.infonow.bofa", "Bank of America", True),

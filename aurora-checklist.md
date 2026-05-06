@@ -9,6 +9,8 @@ Sandboxed Google Play for push/Play-Integrity.
 - [ ] `com.google.android.apps.wear.companion` — Wear OS **[SGP]**
 - [ ] `com.anthropic.claude` — Claude
 - [ ] `com.liamcottle.meshcore.android` — MeshCore
+- [ ] `com.seafile.seadroid2` — Seafile
+- [ ] `com.whatsapp` — WhatsApp
 - [ ] `com.infonow.bofa` — Bank of America **[SGP]**
 - [ ] `com.wf.wellsfargomobile` — Wells Fargo **[SGP]**
 - [ ] `com.venmo` — Venmo **[SGP]**

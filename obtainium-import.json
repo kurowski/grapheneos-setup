@@ -78,17 +78,6 @@
       "overrideSource": "GitHub"
     },
     {
-      "id": "com.seafile.seadroid2",
-      "url": "https://f-droid.org/packages/com.seafile.seadroid2/",
-      "name": "Seafile",
-      "author": "",
-      "preferredApkIndex": 0,
-      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
-      "categories": [],
-      "allowIdChange": true,
-      "overrideSource": "F-Droid"
-    },
-    {
       "id": "com.tailscale.ipn",
       "url": "https://github.com/tailscale/tailscale-android",
       "name": "Tailscale",
@@ -215,7 +204,7 @@
       "name": "Tasks.org",
       "author": "",
       "preferredApkIndex": 0,
-      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
+      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"-fdroid-\", \"invertAPKFilter\": false}",
       "categories": [],
       "allowIdChange": true,
       "overrideSource": "GitHub"
@@ -241,17 +230,6 @@
       "categories": [],
       "allowIdChange": true,
       "overrideSource": "GitHub"
-    },
-    {
-      "id": "com.whatsapp",
-      "url": "https://www.whatsapp.com/android/",
-      "name": "WhatsApp",
-      "author": "",
-      "preferredApkIndex": 0,
-      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
-      "categories": [],
-      "allowIdChange": true,
-      "overrideSource": "HTML"
     },
     {
       "id": "md.obsidian",
