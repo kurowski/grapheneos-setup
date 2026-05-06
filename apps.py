@@ -14,16 +14,16 @@ URL heuristics (verify inside Obtainium after import):
 """
 
 BOOTSTRAP = [
-    # Installed via `adb install` before Obtainium can take over
-    {"id": "app.obtainium",
+    # First-time install is via `adb install`; the entry below lets Obtainium
+    # track itself for future self-updates.
+    {"id": "dev.imranr.obtainium",
      "name": "Obtainium",
      "source": "github",
      "url": "https://github.com/ImranR98/Obtainium",
      # Pick the standard release, not the *-fdroid-*.apk variant (different
      # applicationId for F-Droid's channel; would refuse to update over our
      # adb-installed copy).
-     "apk_asset_filter": "^(?!.*fdroid).*\\.apk$",
-     "notes": "bootstrap — adb install app-release.apk manually first time"},
+     "apk_asset_filter": "^(?!.*fdroid).*\\.apk$"},
 ]
 
 OBTAINIUM = [
