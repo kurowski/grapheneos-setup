@@ -66,6 +66,8 @@ OBTAINIUM = [
      "source": "github", "url": "https://github.com/BrowserWorks/Waterfox-Android"},
     {"id": "org.breezyweather", "name": "Breezy Weather",
      "source": "github", "url": "https://github.com/breezy-weather/breezy-weather"},
+    {"id": "org.futo.inputmethod.latin", "name": "FUTO Keyboard",
+     "source": "github", "url": "https://github.com/futo-org/android-keyboard"},
     {"id": "org.joinmastodon.android", "name": "Mastodon",
      "source": "github", "url": "https://github.com/mastodon/mastodon-android"},
     {"id": "org.kde.kdeconnect_tp", "name": "KDE Connect",
