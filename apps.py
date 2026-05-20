@@ -52,8 +52,6 @@ OBTAINIUM = [
      "source": "github", "url": "https://github.com/termux/termux-app"},
     {"id": "com.termux.styling", "name": "Termux Styling",
      "source": "github", "url": "https://github.com/termux/termux-styling"},
-    {"id": "de.danoeh.antennapod", "name": "AntennaPod",
-     "source": "fdroid", "url": "https://f-droid.org/packages/de.danoeh.antennapod/"},
     {"id": "de.schliweb.makeacopy", "name": "MakeACopy",
      "source": "fdroid", "url": "https://f-droid.org/packages/de.schliweb.makeacopy/"},
     {"id": "io.ente.photos", "name": "Ente Photos",
@@ -121,6 +119,7 @@ AURORA = [
     ("com.touchtunes.android", "TouchTunes", False),
 
     # Streaming / media
+    ("de.danoeh.antennapod", "AntennaPod", True),  # Play build for Android Auto
     ("com.spotify.music", "Spotify", False),
     ("com.getchannels.dvr.app", "Channels DVR", False),
     ("com.sonos.acr2", "Sonos", False),

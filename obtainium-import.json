@@ -111,17 +111,6 @@
       "overrideSource": "GitHub"
     },
     {
-      "id": "de.danoeh.antennapod",
-      "url": "https://f-droid.org/packages/de.danoeh.antennapod/",
-      "name": "AntennaPod",
-      "author": "",
-      "preferredApkIndex": 0,
-      "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"trackOnly\": false, \"versionDetection\": true, \"autoApkFilterByArch\": true, \"apkFilterRegEx\": \"\", \"invertAPKFilter\": false}",
-      "categories": [],
-      "allowIdChange": true,
-      "overrideSource": "F-Droid"
-    },
-    {
       "id": "de.schliweb.makeacopy",
       "url": "https://f-droid.org/packages/de.schliweb.makeacopy/",
       "name": "MakeACopy",

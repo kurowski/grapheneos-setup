@@ -25,6 +25,7 @@ Sandboxed Google Play for push/Play-Integrity.
 - [ ] `com.opentable` — OpenTable
 - [ ] `com.resy.android.prod` — Resy
 - [ ] `com.touchtunes.android` — TouchTunes
+- [ ] `de.danoeh.antennapod` — AntennaPod **[SGP]**
 - [ ] `com.spotify.music` — Spotify
 - [ ] `com.getchannels.dvr.app` — Channels DVR
 - [ ] `com.sonos.acr2` — Sonos
