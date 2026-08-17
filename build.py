@@ -21,6 +21,7 @@ DEFAULT_SETTINGS = {
     "includePrereleases": False,
     "fallbackToOlderReleases": True,
     "trackOnly": False,
+    "matchGroupToUse": "",
     "versionDetection": True,
     "autoApkFilterByArch": True,
     "apkFilterRegEx": "",
@@ -32,12 +33,18 @@ def obtainium_entry(app: dict) -> dict:
     settings = dict(DEFAULT_SETTINGS)
     if app.get("apk_asset_filter"):
         settings["apkFilterRegEx"] = app["apk_asset_filter"]
+    # Source-specific knobs (e.g. the HTML source's intermediateLink) that the
+    # defaults above can't express.
+    settings.update(app.get("extra_settings", {}))
     return {
         "id": app["id"],
         "url": app["url"],
         "name": app["name"],
         "author": app.get("author", ""),
-        "preferredApkIndex": 0,
+        # Index into the release's APK list *after* arch filtering. Only matters
+        # when a release ships several APKs for the same arch (e.g. a "plus"
+        # flavour alongside the standard build).
+        "preferredApkIndex": app.get("preferred_apk_index", 0),
         "additionalSettings": json.dumps(settings),
         "categories": [],
         "allowIdChange": True,

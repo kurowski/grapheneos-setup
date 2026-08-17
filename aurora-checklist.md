@@ -5,12 +5,16 @@ URL bar of your browser at `market://details?id=<pkg>` if you prefer).
 Check each off as you install. **SGP** marks apps that will want
 Sandboxed Google Play for push/Play-Integrity.
 
-- [ ] `com.google.android.apps.googlevoice` — Google Voice **[SGP]**
+- [ ] `com.google.android.gm` — Gmail **[SGP]**
+- [ ] `com.google.android.calendar` — Google Calendar **[SGP]**
+- [ ] `com.google.android.apps.maps` — Google Maps **[SGP]**
+- [ ] `com.google.android.apps.messaging` — Google Messages **[SGP]**
+- [ ] `com.google.android.apps.tycho` — Google Fi **[SGP]**
+- [ ] `com.google.android.GoogleCamera` — Pixel Camera **[SGP]**
 - [ ] `com.google.android.apps.wear.companion` — Wear OS **[SGP]**
+- [ ] `com.google.android.apps.wearables.maestro.companion` — Pixel Buds **[SGP]**
 - [ ] `com.anthropic.claude` — Claude
-- [ ] `com.liamcottle.meshcore.android` — MeshCore
 - [ ] `com.seafile.seadroid2` — Seafile
-- [ ] `com.whatsapp` — WhatsApp
 - [ ] `com.infonow.bofa` — Bank of America **[SGP]**
 - [ ] `com.wf.wellsfargomobile` — Wells Fargo **[SGP]**
 - [ ] `com.venmo` — Venmo **[SGP]**
@@ -25,13 +29,17 @@ Sandboxed Google Play for push/Play-Integrity.
 - [ ] `com.opentable` — OpenTable
 - [ ] `com.resy.android.prod` — Resy
 - [ ] `com.touchtunes.android` — TouchTunes
+- [ ] `me.highest.aviate` — Aviate: Flight Companion
 - [ ] `de.danoeh.antennapod` — AntennaPod **[SGP]**
 - [ ] `com.spotify.music` — Spotify
 - [ ] `com.getchannels.dvr.app` — Channels DVR
 - [ ] `com.sonos.acr2` — Sonos
+- [ ] `io.homeassistant.companion.android` — Home Assistant **[SGP]**
 - [ ] `com.mcu.reolink` — Reolink
-- [ ] `com.tuya.smart` — Tuya Smart
+- [ ] `com.midea.ai.overseas` — SmartHome (MSmartHome)
 - [ ] `com.birdbuddy.app` — Bird Buddy
+- [ ] `com.pushd.client` — Aura Frames
+- [ ] `com.mixtiles.oasis` — Mixtiles
 - [ ] `com.atlassian.android.jira.core` — Jira
 - [ ] `com.backblaze.android` — Backblaze
 - [ ] `com.github.android` — GitHub
@@ -45,6 +53,7 @@ Sandboxed Google Play for push/Play-Integrity.
 - [ ] `com.onepassword.android` — 1Password **[SGP]**
 - [ ] `com.dayoneapp.dayone` — Day One
 - [ ] `com.readermobile` — Readwise Reader
+- [ ] `org.kde.kdeconnect_tp` — KDE Connect
 - [ ] `com.amazon.mShop.android.shopping` — Amazon
 - [ ] `com.usablenet.mobile.walgreen` — Walgreens
 - [ ] `com.planetfitness` — Planet Fitness
@@ -55,7 +64,8 @@ Sandboxed Google Play for push/Play-Integrity.
 - [ ] `com.kagi.search` — Kagi Search
 - [ ] `com.powerschool.portal` — PowerSchool
 - [ ] `com.valvesoftware.android.steam.community` — Steam
-- [ ] `com.server.auditor.ssh.client` — Termius
+- [ ] `com.PalmCourt.Wavelength` — Wavelength
+- [ ] `com.windyty.android` — Windy.com
+- [ ] `bitpit.launcher` — Niagara Launcher
 - [ ] `com.subaru.telematics.app.remote` — Subaru STARLINK **[SGP]**
 - [ ] `com.toyota.oneapp` — Toyota **[SGP]**
-- [ ] `com.pushd.client` — Aura Frames
